@@ -30,13 +30,13 @@ int main(){
     for(int i = T, N; i > 0; i--){
         cin >> N; vector<ll> bit(MM, 0); ll inv = 0; vector<int> a(MM, 0); map<int, int> mp;
         for(int j = 1; j <= N; j++){
-            cin >> a[j]; mp[a[j]] = 0; // set the actual value
+            cin >> a[j]; mp[a[j]] = 0;
         }
         int idx = 0; 
         for(auto&e : mp) e.second = ++idx;
         for(int k = 1; k <= N; k++){
             inv += k - 1 - query(mp[a[k]], bit);
-            update(mp[a[k]], 1,bit);
+            update(mp[a[k]], 1, bit);
         }
         cout << inv << endl;
     }
