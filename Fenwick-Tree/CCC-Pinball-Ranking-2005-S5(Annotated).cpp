@@ -1,4 +1,4 @@
-// ANNOTATED CODE - https://dmoj.ca/src/6338977
+// ANNOTATED CODE - https://dmoj.ca/src/6392246
 // Pinball Ranking '05 S5 (CCC) - https://dmoj.ca/problem/ccc05s5
 #include <bits/stdc++.h>
 using namespace std;
