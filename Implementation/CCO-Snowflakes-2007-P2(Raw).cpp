@@ -1,4 +1,5 @@
-// RAW CODE - 
+// RAW CODE - https://dmoj.ca/src/6392195
+// Snowflakes '07 P2 (CCO) - https://dmoj.ca/problem/cco07p2
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e4+3;
