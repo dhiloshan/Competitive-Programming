@@ -17,7 +17,7 @@ typedef queue<int> qi;
 #define MEM(arr, x) memset(arr, x, sizeof(arr))
 int N; map<string, int> mp;
 
-string snow_flake(deque<int>& a){ // function to find the smallest lexicographical arrangement of the snowflake's arms
+string snow_flake(deque<int>& a){ // function to find the smallest lexicographical arrangement of the snowflake's arms (referred to as minimum representation)
     deque<int> ori = a; string min = ""; // duplicating the deque to count the arrangements counter-clock wise (uses different logic)
                                          // min acts as the return value of this function
     for(int e : a) min += to_string(e); // "convert" the deque to a string by appending each value in the deque
