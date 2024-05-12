@@ -75,4 +75,17 @@ int main(){
  for(int k = 0; k <= ans.size()-1; k++){ // starting from index 0 (vector ans is indexed 0) and end at the last index (we minus one because again its 0-indexed, not 1-indexed)                                                        
     cout << k+1 << ") Item " << ans[k] << " with weight " << w[ans[k]] << " and value " << v[ans[k]] << "." << endl; // ans[k] represents index i, we add 1 to k to print it out as 1-indexed, you never say to someone "item 0 is"
  }
+ Sample Input: (note that the first line takes input for N, W respectively, and then the next N+1 lines take input for item i by WEIGHT FIRST, then value)
+ 6 6
+ 2 1
+ 3 3
+ 1 5
+ 5 2
+ 3 6
+ 5 10
+
+ Sample Output:
+ The items I have chosen for your knapsack to get a value of 15 are:
+ 1) Item 3 with weight 1 and value 5.
+ 2) Item 6 with weight 5 and value 10.
  */
