@@ -4,7 +4,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e5+2;
-int N, W; long long dp[3][MM];
+int N, W; long long dp[2][MM];
 int main(){
     cin >> N >> W;
     for(int i = 1, v, w; i <= N; i++){
