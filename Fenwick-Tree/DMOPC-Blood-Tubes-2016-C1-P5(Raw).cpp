@@ -1,4 +1,4 @@
-// RAW Code - https://dmoj.ca/src/6356403
+// RAW CODE - https://dmoj.ca/src/6356403
 // Blood Tubes '16 Contest 1 Problem 5 (DMOPC) - https://dmoj.ca/problem/dmopc16c1p5
 #include <bits/stdc++.h>
 using namespace std;
