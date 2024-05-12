@@ -42,6 +42,7 @@ int main(){
                 // summing up everything, we want to see if it is better/more optimal/more valuable to choose item or not to choose item i:
                 dp[i][j] = max(dp[i-1][j], v + dp[i-1][j-w]); // we are using the max function to compare the two choices to see which one is "higher in value"
             }
+            // note that this if else statement can be written as: dp[i][j] = (w[i] > j) ? dp[i-1][j] : max(dp[i-1][j], v[i] + dp[i-1][j-w[i]]);
         }
     }
     // we have now solved N * W problems, where if we wanted the optimal solution for items 1 to i with knapsack capacity w, it would be dp[i][w]
