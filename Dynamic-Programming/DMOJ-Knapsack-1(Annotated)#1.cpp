@@ -56,7 +56,7 @@ int main(){
  We can tell if we did pick item i if cell dp[i][j] - v == dp[i-1][j-w]
  We literally just did simple algebra, if you look at the else statement, dp[i][j] = dp[i-1][j-w] + v, now we subtract v from both sides
 
- // Snippet of Code (assume v[i] tells us the value of item i and w[i] tells us the weight of item i
+ // Snippet of Code (assume v[i] tells us the value of item i and w[i] tells us the weight of item i)
  vector<int> ans; // stores all the items by their index (when they came into input)
  int i = N, j = W; // start this algorithm from the bottom right corner, perform a "bottom-up" approach to backtrack
  while(i > 0 && j > 0){ // bounds of our algorithm (dp[1][1] is the smallest by index we can go and need to, dp[0][x] is just 0, same for dp[x][0] => this was defined in our BASE CASE)
