@@ -47,3 +47,32 @@ int main(){
     // we have now solved N * W problems, where if we wanted the optimal solution for items 1 to i with knapsack capacity w, it would be dp[i][w]
     cout << dp[N][W] << endl; // the problem is asking to consider all N items with a knapsack size W
 }
+
+/*
+ New Problem: Now that you know the highest value you can achieve with these N items and knapsack with size W,
+ can you tell me what items you have chose?
+ Simple, it's just backtracking
+ You always had two choices, you pick item i (dp[i-1][j-w]), or you don't pick item i (dp[i-1][j])
+ We can tell if we did pick item i if cell dp[i][j] - v == dp[i-1][j-w]
+ We literally just did simple algebra, if you look at the else statement, dp[i][j] = dp[i-1][j-w] + v, now we subtract v from both sides
+
+ // Snippet of Code (assume v[i] tells us the value of item i and w[i] tells us the weight of item i
+ vector<int> ans; // stores all the items by their index (when they came into input)
+ int i = N, j = W; // start this algorithm from the bottom right corner, perform a "bottom-up" approach to backtrack
+ while(i > 0 && j > 0){ // bounds of our algorithm (dp[1][1] is the smallest by index we can go and need to, dp[0][x] is just 0, same for dp[x][0] => this was defined in our BASE CASE)
+    if((dp[i][j] - v[i] == dp[i-1][j-w[i]]) && (j >= w[i])){ // first, check if we have enough space to take item i with knapsack size j
+                                                            // if we do, use the equation we created before to see if we even did take item i
+        ans.push_back(i);  // if we did take item i, put it into the vector to say we have chose item i to fill up our knapsack with size W using N items
+        j -= w[i]; i--; // then, you need to FIRST subtract our current knapsack size with the weight of item i
+                        // AFTER, you can subtract i by 1
+                        // NOTE: if you did it the other way, you would be subtracting knapsack with size j by the weight of item i-1, not item i
+    }
+    else i--; // otherwise, go up one row, which is what happens when we DON'T or CAN'T take item i (dp[i][j] = dp[i-1][j], same dp cell but it's i-1)
+ }
+ sort(begin(ans), end(ans)); // since we are performing a bottom up approach, we are starting with item N and are ending at item 1, so we need to sort it in ascending order
+ cout << "The items I have chosen for your knapsack to get a value of " << dp[N][W] << " are:" << endl; // remember, we are checking what items we did for dp[N][W], you could just change 
+                                                                                                        // the i and j variables to whatever dimensions you want to solve for what items we chose for dp[i][j]
+ for(int k = 0; k <= ans.size()-1; k++){ // starting from index 0 (vector ans is indexed 0) and end at the last index (we minus one because again its 0-indexed, not 1-indexed)                                                        
+    cout << k+1 << ") Item " << ans[k] << " with weight " << w[ans[k]] << " and value " << v[ans[k]] << "." << endl; // ans[k] represents index i, we add 1 to k to print it out as 1-indexed, you never say to someone "item 0 is"
+ }
+ */
