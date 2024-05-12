@@ -1,4 +1,4 @@
-// ANNOTATED VERSION - https://dmoj.ca/src/6335062 (refer to dr. henri lab DMOPC, similar)
+// ANNOTATED CODE - https://dmoj.ca/src/6335062 (refer to dr. henri lab DMOPC, similar)
 // Selective Cutting '14 Contest 2 Problem 6 (DMOPC) - https://dmoj.ca/problem/dmopc14c2p6
 #include <bits/stdc++.h>
 using namespace std;
