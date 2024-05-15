@@ -1,6 +1,6 @@
 // SOLUTION 2: 2 Row Flip DP ARRAY (2 by W)
-// ANNOTATED CODE - https://dmoj.ca/problem/dpd
-// Educational DP Contest AtCoder D Knapsack 1 (DMOJ) - https://dmoj.ca/src/6397539
+// Educational DP Contest AtCoder D - Knapsack 1 (DMOJ) - https://dmoj.ca/problem/dpd
+// ANNOTATED CODE - https://dmoj.ca/src/6397539
 #include <bits/stdc++.h> // Space Complexity of Approach 1: O(N * W), Time Complexity of Approach 1: O(N * W)
 using namespace std; // This method will optimize the space complexity to O(W), but the time complexity remains the same
 const int MM = 1e5+2; // bounds of W (knapsack size) will go to 10^5
