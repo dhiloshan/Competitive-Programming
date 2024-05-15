@@ -1,5 +1,5 @@
+// DMOPC '14 Contest 2 P6 - Selective Cutting (DMOJ) - https://dmoj.ca/problem/dmopc14c2p6
 // ANNOTATED CODE - https://dmoj.ca/src/6335062 (refer to dr. henri lab DMOPC, similar)
-// Selective Cutting '14 Contest 2 Problem 6 (DMOPC) - https://dmoj.ca/problem/dmopc14c2p6
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e5+3;
