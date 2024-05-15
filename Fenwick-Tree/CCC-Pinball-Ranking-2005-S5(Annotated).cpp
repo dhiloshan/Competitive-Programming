@@ -1,5 +1,5 @@
-// ANNOTATED CODE - https://dmoj.ca/src/6392246
-// Pinball Ranking '05 S5 (CCC) - https://dmoj.ca/problem/ccc05s5
+// CCC '05 S5 - Pinball Ranking (DMOJ) - https://dmoj.ca/problem/ccc05s5
+// RAW CODE - https://dmoj.ca/src/6392246
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e5+3;
