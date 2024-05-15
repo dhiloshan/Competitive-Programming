@@ -1,6 +1,6 @@
 // SOLUTION 3: 1D DP ARRAY (size W)
-// RAW CODE - https://dmoj.ca/src/6400062
 // Educational DP Contest AtCoder D Knapsack 1 (DMOJ) - https://dmoj.ca/problem/dpd
+// RAW CODE - https://dmoj.ca/src/6400062
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e5+3;
