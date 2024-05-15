@@ -1,6 +1,6 @@
 // SOLUTION 2: 2 Row Flip DP ARRAY (2 by W)
-// RAW CODE - https://dmoj.ca/problem/dpd
-// Educational DP Contest AtCoder D Knapsack 1 (DMOJ) - https://dmoj.ca/src/6397530
+// Educational DP Contest AtCoder D Knapsack 1 (DMOJ) - https://dmoj.ca/problem/dpd
+// RAW CODE - https://dmoj.ca/src/6397530 
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e5+2;
