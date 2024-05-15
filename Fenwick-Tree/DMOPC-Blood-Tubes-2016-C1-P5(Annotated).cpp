@@ -1,4 +1,4 @@
-// Blood Tubes '16 Contest 1 Problem 5 (DMOPC) - https://dmoj.ca/problem/dmopc16c1p5
+// DMOPC '16 Contest 1 P5 - Blood Tubes (DMOJ) - https://dmoj.ca/problem/dmopc16c1p5
 // ANNOTATED CODE - https://dmoj.ca/src/6317252
 // classical inversion counting question using fenwick's tree
 // we're taking advantage of the fact we know the frequency of a subarray of integers, overall logic is quite easy
