@@ -1,5 +1,5 @@
-// RAW CODE (no submission link)
 // INVCNT: Inversion Count (SPOJ) - https://www.spoj.com/problems/INVCNT/
+// RAW CODE (no submission link)
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 2e5+3;
