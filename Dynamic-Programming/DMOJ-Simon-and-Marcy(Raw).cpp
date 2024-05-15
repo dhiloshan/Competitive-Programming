@@ -1,5 +1,5 @@
-// RAW CODE - https://dmoj.ca/problem/valday15p2
-// Valentine's Day '15 P2 - Simon and Marcy (DMOJ) - https://dmoj.ca/src/6400744
+// Valentine's Day '15 P2 - Simon and Marcy (DMOJ) - https://dmoj.ca/problem/valday15p2 
+// RAW CODE - https://dmoj.ca/src/6400744
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e3+3;
