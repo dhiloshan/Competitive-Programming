@@ -16,7 +16,6 @@ int main(){
             else{
                 dp[i][j] = max(dp[i-1][j], v + dp[i-1][j-w]);
             }
-            // lines 13 to 18 can be written as: dp[i][j] = (w[i] > j) ? dp[i-1][j] : max(dp[i-1][j], v[i] + dp[i-1][j-w[i]]);
         }
     }
     cout << dp[N][W] << endl;
