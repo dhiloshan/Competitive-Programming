@@ -1,4 +1,4 @@
-// Coding Spree (DMOJ) - https://dmoj.ca/problem/spree
+// Coding Spree (DMOJ): https://dmoj.ca/problem/spree
 // RAW CODE - https://dmoj.ca/src/6415708
 #include <bits/stdc++.h>
 using namespace std;
