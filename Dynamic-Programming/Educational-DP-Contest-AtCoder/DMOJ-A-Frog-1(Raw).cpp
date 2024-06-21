@@ -1,4 +1,4 @@
-// Educational DP Contest AtCoder A - Frog 1 (DMOJ) - https://dmoj.ca/problem/dpa
+// Educational DP Contest AtCoder A - Frog 1 (DMOJ): https://dmoj.ca/problem/dpa
 // RAW CODE - https://dmoj.ca/src/6410511
 #include <bits/stdc++.h>
 using namespace std;
