@@ -1,4 +1,4 @@
-// Educational DP Contest AtCoder A - Frog 1 (DMOJ) - https://dmoj.ca/problem/dpa
+// Educational DP Contest AtCoder A - Frog 1 (DMOJ): https://dmoj.ca/problem/dpa
 // ANNOTATED CODE - https://dmoj.ca/src/6410510
 #include <bits/stdc++.h> // DP State - let dp[i] represent the minimum cost to reach stone i
 using namespace std; // DP Transition - base case: dp[1] = 0 (when you are starting at stone 1, there is no cost originally)
