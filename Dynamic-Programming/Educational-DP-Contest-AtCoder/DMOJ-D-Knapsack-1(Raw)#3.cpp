@@ -1,5 +1,5 @@
 // SOLUTION 3: 1D DP ARRAY (size W)
-// Educational DP Contest AtCoder D Knapsack 1 (DMOJ) - https://dmoj.ca/problem/dpd
+// Educational DP Contest AtCoder D Knapsack 1 (DMOJ): https://dmoj.ca/problem/dpd
 // RAW CODE - https://dmoj.ca/src/6400062
 #include <bits/stdc++.h>
 using namespace std;
