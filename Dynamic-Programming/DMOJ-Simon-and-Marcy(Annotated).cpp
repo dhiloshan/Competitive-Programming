@@ -1,4 +1,4 @@
-// Valentine's Day '15 P2 - Simon and Marcy (DMOJ) - https://dmoj.ca/problem/valday15p2 
+// Valentine's Day '15 P2 - Simon and Marcy (DMOJ): https://dmoj.ca/problem/valday15p2 
 // ANNOTATED CODE - https://dmoj.ca/src/6400749
 #include <bits/stdc++.h>
 using namespace std; // classical knapsack problem in disguise
