@@ -1,4 +1,4 @@
-// CCC '07 J5 - Keep on Truckin' (DMOJ) - https://dmoj.ca/problem/ccc07j5
+// CCC '07 J5 - Keep on Truckin' (DMOJ): https://dmoj.ca/problem/ccc07j5
 // RAW CODE - https://dmoj.ca/src/6409543
 #include <bits/stdc++.h>
 using namespace std;
