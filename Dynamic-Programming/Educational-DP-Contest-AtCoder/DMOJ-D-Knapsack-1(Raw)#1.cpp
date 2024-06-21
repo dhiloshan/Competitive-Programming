@@ -1,5 +1,5 @@
 // SOLUTION 1: STANDARD TEMPLATE: 2D DP ARRAY (N by W)
-// Educational DP Contest AtCoder D Knapsack 1 (DMOJ) - https://dmoj.ca/problem/dpd
+// Educational DP Contest AtCoder D Knapsack 1 (DMOJ): https://dmoj.ca/problem/dpd
 // RAW CODE - https://dmoj.ca/src/6397130
 #include <bits/stdc++.h>
 using namespace std;
