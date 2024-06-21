@@ -1,4 +1,4 @@
-// CCC '07 J5 - Keep on Truckin' (DMOJ) - https://dmoj.ca/problem/ccc07j5
+// CCC '07 J5 - Keep on Truckin' (DMOJ): https://dmoj.ca/problem/ccc07j5
 // ANNOTATED CODE - https://dmoj.ca/src/6410349
 #include <bits/stdc++.h> // DP State - Let dp[i] represent the number of ways to reach a motel at point a[i]
 using namespace std; // DP Transition - for base case, we know there is only one way to reach "origin" (point 0), 1 path
