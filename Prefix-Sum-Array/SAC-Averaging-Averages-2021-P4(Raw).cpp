@@ -1,4 +1,4 @@
-// SAC '21 Code Challenge P4 (DMOJ) - https://dmoj.ca/problem/sac21ccp4
+// SAC '21 Code Challenge P4 (DMOJ): https://dmoj.ca/problem/sac21ccp4
 // RAW CODE - https://dmoj.ca/src/6454165
 #include <bits/stdc++.h>
 using namespace std;
