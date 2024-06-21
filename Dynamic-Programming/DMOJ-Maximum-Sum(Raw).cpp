@@ -1,4 +1,4 @@
-// Maximum Sum (DMOJ) - https://dmoj.ca/problem/dp1p1
+// Maximum Sum (DMOJ): https://dmoj.ca/problem/dp1p1
 // RAW CODE - https://dmoj.ca/src/6410615
 #include <bits/stdc++.h>
 using namespace std;
