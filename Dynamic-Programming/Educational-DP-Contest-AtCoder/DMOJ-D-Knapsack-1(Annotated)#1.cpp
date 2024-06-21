@@ -1,5 +1,5 @@
 // SOLUTION 1: STANDARD TEMPLATE: 2D DP ARRAY (N by W)
-// Educational DP Contest AtCoder D - Knapsack 1 (DMOJ) - https://dmoj.ca/problem/dpd
+// Educational DP Contest AtCoder D - Knapsack 1 (DMOJ): https://dmoj.ca/problem/dpd
 // ANNOTATED CODE - https://dmoj.ca/src/6397135
 #include <bits/stdc++.h> // NOTE: when the comments refer to "optimal solution", it is referring to the "maximum possible sum of the values of items that Taro takes home"
 using namespace std; // in other words, it is referring to for the situation where you have i items with knapsack size w, the BEST solution possible is at cell dp[i][w] (known as the dp state)
