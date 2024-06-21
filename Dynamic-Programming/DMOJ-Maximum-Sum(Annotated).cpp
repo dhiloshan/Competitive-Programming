@@ -1,4 +1,4 @@
-// Maximum Sum (DMOJ) - https://dmoj.ca/problem/dp1p1
+// Maximum Sum (DMOJ): https://dmoj.ca/problem/dp1p1
 // ANNOTATED CODE - https://dmoj.ca/src/6410640
 #include <bits/stdc++.h> // DP State - let dp[i] represent the maximum sum that can be obtained from a valid subset from numbers 1 to i
 using namespace std; // valid subset refers to a subset with no adjacent neighbours, as mentioned in the question
