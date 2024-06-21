@@ -1,4 +1,4 @@
-// Coding Spree (DMOJ) - https://dmoj.ca/problem/spree
+// Coding Spree (DMOJ): https://dmoj.ca/problem/spree
 // ANNOTATED CODE - https://dmoj.ca/src/6415718
 #include <bits/stdc++.h>
 using namespace std; // template question from 0-1 knapsack problem (refer to knapsack educational dp problem d annotated code number 3 for more details)
