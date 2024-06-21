@@ -1,4 +1,4 @@
-// Educational DP Contest AtCoder B - Frog 2 (DMOJ) - https://dmoj.ca/problem/dpb
+// Educational DP Contest AtCoder B - Frog 2 (DMOJ): https://dmoj.ca/problem/dpb
 // ANNOTATED CODE - https://dmoj.ca/src/6410536
 #include <bits/stdc++.h> // DP State - dp[i] represents the minimum cost to reach stone i
 using namespace std; // same dp transition and base case as frog 1; however, we can reach the next K stones => just a for loop, no hardcoding (generalization)
