@@ -1,4 +1,4 @@
-// INVCNT: Inversion Count (SPOJ) - https://www.spoj.com/problems/INVCNT/
+// INVCNT: Inversion Count (SPOJ): https://www.spoj.com/problems/INVCNT/
 // RAW CODE (no submission link)
 #include <bits/stdc++.h>
 using namespace std;
