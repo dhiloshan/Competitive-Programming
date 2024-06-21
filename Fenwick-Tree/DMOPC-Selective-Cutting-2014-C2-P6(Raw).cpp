@@ -1,4 +1,4 @@
-// DMOPC '14 Contest 2 P6 - Selective Cutting (DMOJ) - https://dmoj.ca/problem/dmopc14c2p6
+// DMOPC '14 Contest 2 P6 - Selective Cutting (DMOJ): https://dmoj.ca/problem/dmopc14c2p6
 // RAW CODE - https://dmoj.ca/src/6335065
 #include <bits/stdc++.h>
 using namespace std;
