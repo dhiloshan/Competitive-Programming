@@ -14,12 +14,10 @@ int main() {
     fill(rem, rem+MM, -1);
     rem[0] = 0;
     for(int i = 1; i <= N; i++){
-        if(rem[psa[i]] != -1){
+        if(rem[psa[i]] != -1)
             ans = max(ans, i - rem[psa[i]]);
-        }
-        else{
+        else
             rem[psa[i]] = i;
-        }
     }
     cout << ans << endl;
 }
