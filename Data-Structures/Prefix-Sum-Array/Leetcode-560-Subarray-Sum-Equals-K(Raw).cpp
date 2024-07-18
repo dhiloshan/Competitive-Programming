@@ -1,3 +1,5 @@
+// Problem 560: Subarray Sum Equals K (Leetcode): https://leetcode.com/problems/subarray-sum-equals-k/
+// RAW CODE - FIX THIS FILE
 class Solution {
 public:
     int subarraySum(vector<int>& nums, int k) {
