@@ -1,6 +1,6 @@
 // SOLUTION #1: generate up to N intervals and then merge them O(NlogN)
 // Yet Another Contest 8 P1 - Permutation Sorting (DMOJ): https://dmoj.ca/problem/yac8p1
-// ANNOTATED CODE - https://dmoj.ca/src/6737527
+// ANNOTATED CODE - https://dmoj.ca/src/6737548
 // idea is array a[] where, lets say 3, is at index 6, cannot be converted into a valid array of 1, 2, 3, ..., N, unless we sort index 3 to index 6, where 3 represents Px (index it should be at) and 6 represents x
 #include <bits/stdc++.h>
 using namespace std;
