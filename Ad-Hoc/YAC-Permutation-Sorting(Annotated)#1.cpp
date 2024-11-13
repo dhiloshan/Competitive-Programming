@@ -32,7 +32,7 @@ int main(){
         for(auto it = rng.begin()+1; it != rng.end(); ++it){
             auto [l, r] = *it;
             if(l <= R) { // merging the two intervals is possible
-                // set the right bound of the interval (the left bound is L because we sorted by the first # on line 24)
+                // set the right bound of the interval (the left bound is L because we sorted by the first # on line 29)
                 R = max(r, R);
             }
             else { // this interval does not intersect
