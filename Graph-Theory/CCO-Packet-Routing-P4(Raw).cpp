@@ -1,12 +1,12 @@
 // CCO '00 P4 - Packet Routing (DMOJ): https://dmoj.ca/problem/cco00p4
-// RAW CODE - https://dmoj.ca/src/6737364
+// RAW CODE - https://dmoj.ca/src/6737510
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e3+2;
-int N, M, Q, vis[MM]; vector<pair<int, int> > adj[MM];
-int dfs(int src, int dst){
-    if(src == dst) return 0;
-    for(auto &[v, w] : adj[src]) {
+int N, M, Q; bool vis[MM]; vector<pair<int, int> > adj[MM];
+int dfs(int cur, int dst){
+    if(cur == dst) return 0;
+    for(auto &[v, w] : adj[cur]) {
         if (!vis[v]) {
             vis[v] = true;
             int cost = dfs(v, dst);
@@ -27,7 +27,7 @@ int main(){
     }
     for(int i = 0, u, v; i < Q; i++){
         cin >> u >> v;
-        for(int i = 0; i < MM; i++) vis[i] = 0;
+        for(int i = 0; i < MM; i++) vis[i] = false;
         vis[u] = true;
         cout << dfs(u, v) << endl;
     }
