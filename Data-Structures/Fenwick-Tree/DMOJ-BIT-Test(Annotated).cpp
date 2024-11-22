@@ -50,7 +50,7 @@ int main(){
             // think about:
             // for parameter one (position): what CELL do I want to change
             // for parameter two (index): what do you want to ADD for this cell
-           	// for parameter three (different bit array) (usually not there): which functions do I want: bit[], representing psa array for range sum queriesrr
+           	// for parameter three (different bit array) (usually not there): which functions do I want: bit[], representing psa array for range sum queries
         																						   // or freq[], for the frequency of a subarray of numbers 
         }
         else if(op == 'S'){
