@@ -1,5 +1,5 @@
 // SAC '22 Code Challenge 5 Junior P4 - Course Requirements (SAC): https://dmoj.ca/problem/sac22cc5jp4
-// ANNOTATED CODE
+// ANNOTATED CODE - https://dmoj.ca/src/6777175
 // 2D DP on a grid (2 choices): is it better going left or right (similar to BST)
 #include <bits/stdc++.h> // note that space complexity can be optimized to O(N) [my challenge to you]
 using namespace std;
