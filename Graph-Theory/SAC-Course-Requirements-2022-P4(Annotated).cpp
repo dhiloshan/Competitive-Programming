@@ -1,4 +1,4 @@
-// SAC '22 Code Challenge 5 Junior P4 - Course Requirements (SAC): https://dmoj.ca/problem/sac22cc5jp4
+// SAC '22 Code Challenge 5 Junior P4 - Course Requirements (DMOJ) - https://dmoj.ca/problem/sac22cc5jp4
 // ANNOTATED CODE - https://dmoj.ca/src/6779030
 /* Topological sort (that uses BFS)
  Haven't really implemented this in a while, but I'll relate this to 2018 CCC J5 about the endpoints idea
