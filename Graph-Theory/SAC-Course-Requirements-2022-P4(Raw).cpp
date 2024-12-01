@@ -1,4 +1,4 @@
-// SAC '22 Code Challenge 5 Junior P4 - Course Requirements (SAC): https://dmoj.ca/problem/sac22cc5jp4
+// SAC '22 Code Challenge 5 Junior P4 - Course Requirements (DMOJ): https://dmoj.ca/problem/sac22cc5jp4
 // RAW CODE - https://dmoj.ca/src/6779027
 #include <bits/stdc++.h>
 using namespace std;
