@@ -1,4 +1,4 @@
-// CCC '10 J5 - Knight Hop (CCC): https://dmoj.ca/problem/ccc10j5
+// CCC '10 J5 - Knight Hop (DMOJ): https://dmoj.ca/problem/ccc10j5
 // ANNOTATED CODE - https://dmoj.ca/src/6772221
 #include <bits/stdc++.h>
 using namespace std;
