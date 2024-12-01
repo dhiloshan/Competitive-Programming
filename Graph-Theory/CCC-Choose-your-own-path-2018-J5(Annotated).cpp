@@ -1,4 +1,4 @@
-// CCC '18 J5 - Choose your own path (CCC): https://dmoj.ca/problem/ccc18j5
+// CCC '18 J5 - Choose your own path (DMOJ): https://dmoj.ca/problem/ccc18j5
 // ANNOTATED CODE - https://dmoj.ca/src/6777009
 /* BFS Template
  Perform BFS on the graph
