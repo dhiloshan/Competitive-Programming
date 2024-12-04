@@ -1,4 +1,4 @@
-// USACO 2019 US Open Contest, Bronze Problem 1. Bucket Brigade (USACO): Problem 1. Bucket Brigade
+// USACO 2019 US Open Contest, Bronze Problem 1. Bucket Brigade (USACO): http://www.usaco.org/index.php?page=viewproblem2&cpid=759
 // RAW CODE
 #include <bits/stdc++.h>
 using namespace std;
