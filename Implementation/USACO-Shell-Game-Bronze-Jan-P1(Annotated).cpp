@@ -8,8 +8,8 @@ typedef pair<pi, int> pii;
 int N, mx; bool lis[4]; vector<pii> swp; // lis[1] to lis[3] represents the "state" of the ith shell (if true then the rock is under that shell only
 int main(){
     ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-    ifstream cin("shell.in");
-    ofstream cout("shell.out");
+    // ifstream cin("shell.in");
+    // ofstream cout("shell.out");
     cin >> N;
     for(int i = 0, x, y, z; i < N; i++){
         cin >> x >> y >> z;
