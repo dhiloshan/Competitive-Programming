@@ -5,8 +5,8 @@ using namespace std;
 int N, K; vector<string> words;
 int main(){
     ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-    ifstream cin("word.in");
-    ofstream cout("word.out");
+    // ifstream cin("word.in");
+    // ofstream cout("word.out");
     cin >> N >> K;
     for(int i = 0; i < N; i++){
         string cur; cin >> cur;
