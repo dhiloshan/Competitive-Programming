@@ -25,4 +25,5 @@ int main(){
             cout << endl << cur;
         }
     }
+    cout << endl; // At the end of the code you need to print a new line, which is why my initial code that worked on USACO didn't work on DMOJ
 }
