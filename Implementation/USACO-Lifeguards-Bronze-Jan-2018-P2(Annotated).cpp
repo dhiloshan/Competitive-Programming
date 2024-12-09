@@ -6,8 +6,8 @@ typedef pair<int, int> pi;
 int N, mx; vector<pi> t;
 int main(){
     ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
-    ifstream cin("lifeguards.in");
-    ofstream cout("lifeguards.out");
+    // ifstream cin("lifeguards.in");
+    // ofstream cout("lifeguards.out");
     // run N scenarios where you fire the ith lifeguard, find the coverage without that lifeguard, and the final answer is the maximum of all coverages
     cin >> N;
     for(int i = 0, a, b; i < N; i++){
