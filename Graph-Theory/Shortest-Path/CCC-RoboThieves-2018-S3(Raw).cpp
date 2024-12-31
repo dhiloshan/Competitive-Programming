@@ -1,3 +1,4 @@
+// SOLUTION 1: Dijkstra Algorithm O((V+E) log V)
 // CCC '18 S3 - RoboThieves (DMOJ): https://dmoj.ca/problem/ccc18s3
 // RAW CODE - https://dmoj.ca/src/6846647
 #include <bits/stdc++.h>
