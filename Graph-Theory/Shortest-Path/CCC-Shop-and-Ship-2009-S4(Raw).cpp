@@ -4,7 +4,9 @@
 using namespace std;
 const int MM = 5002, INF = 0x3f3f3f3f;
 typedef pair<int, int> pi;
-int N, M, K, D, dis[MM], city[MM], cost[MM]; vector<pi> adj[MM]; bool vis[MM];
+int N, M, K, D, dis[MM], city[MM], cost[MM];
+vector<pi> adj[MM]; bool vis[MM];
+
 int main(){
     ios::sync_with_stdio(0); cin.tie(0);
     cin >> N >> M;
@@ -19,11 +21,10 @@ int main(){
     priority_queue<pi, vector<pi>, greater<> > q;
     memset(dis, 0x3f, sizeof(dis));
     dis[D] = 0; q.push({dis[D], D});
-
     while(!q.empty()){
-        int d = q.top().first, u = q.top().second; q.pop();
+        int u = q.top().second; q.pop();
         if(vis[u]) continue;
-        vis[u] = 1;
+        vis[u] = true;
         for(auto& [v, w] : adj[u]){
             if(dis[v] > dis[u] + w) {
                 dis[v] = dis[u] + w ; q.push({dis[v], v});
@@ -33,6 +34,5 @@ int main(){
     int ans = INF;
     for(int i=1; i<=K; i++)
         ans = min(ans, dis[city[i]] + cost[i]);
-
     cout << ans << endl;
 }
