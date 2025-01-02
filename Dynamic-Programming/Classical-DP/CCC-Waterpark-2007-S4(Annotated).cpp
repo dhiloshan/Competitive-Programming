@@ -20,7 +20,7 @@ int main(){
     while(a != 0 && b != 0){ // the number of edges (M) is not given, only til we reach 0 0 is when the program stops taking input
         adj[b].push_back(a); // reverse the edge to go backwards and solve the sub problem
         cin >> a >> b; 
-    }
+    } // dp[i] number of ways to reach node i from node 1
     dp[1] = 1; // base case: there is one way to reach node 1
     for(int i = 2; i <= N; i++){ // goes through the nodes in a forward fashion
         for(int nxt : adj[i]){ // for each neighbour of node i
