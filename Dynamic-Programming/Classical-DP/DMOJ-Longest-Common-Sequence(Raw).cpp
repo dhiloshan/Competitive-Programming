@@ -1,10 +1,9 @@
 // Longest Common Subsequence (DMOJ): https://dmoj.ca/problem/lcs
-// RAW CODE - https://dmoj.ca/src/6872218
+// RAW CODE - https://dmoj.ca/src/6872223
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e3+3;
-typedef long long ll;
-int N, M, a[MM], b[MM]; ll dp[MM][MM];
+int N, M, a[MM], b[MM], dp[MM][MM];
 int main(){
     ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
     cin >> N >> M;
