@@ -24,7 +24,7 @@ int main(){
     }
     cin >> M;
     for(int i = 1, x; i <= M; i++){
-        cin >> x; x = pos[x]; // x is just b_in_a[i]
+        cin >> x; x = pos[x]; // x is just b_in_a[i]; x stores an index
         if(x == 0) continue; // global int arrays by default are initialized to 0, so if pos[x] = 0, that means there is no such number b[i] in array a, so don't do LIS and skip this iteration
         // we are doing LIS dp as we take input
         if(lis.empty() || x > lis.back()){ // the lis array will be empty at first so check that
