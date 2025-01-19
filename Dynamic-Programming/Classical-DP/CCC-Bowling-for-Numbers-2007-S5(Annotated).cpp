@@ -1,5 +1,5 @@
 // CCC '07 S5 - Bowling for Numbers (DMOJ): https://dmoj.ca/problem/ccc07s5
-// ANNOTATED CODE
+// ANNOTATED CODE - https://dmoj.ca/src/6899417
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 3e4+5;
