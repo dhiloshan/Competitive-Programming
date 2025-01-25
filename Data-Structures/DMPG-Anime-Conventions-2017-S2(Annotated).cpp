@@ -1,5 +1,5 @@
 // DMPG '17 S2 - Anime Conventions (DMOJ): https://dmoj.ca/problem/dmpg17s2
-// ANNOTATED CODE
+// ANNOTATED CODE - https://dmoj.ca/src/6916434
 #include <bits/stdc++.h> // very basic disjoint set
 using namespace std;
 const int MM = 1e5+5;
