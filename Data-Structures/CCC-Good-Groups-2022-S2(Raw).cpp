@@ -1,5 +1,5 @@
 // CCC '22 S2 - Good Groups (DMOJ): https://dmoj.ca/problem/ccc22s2
-// RAW CODE
+// RAW CODE - https://dmoj.ca/src/6929367
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e5+3;
