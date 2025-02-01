@@ -28,7 +28,7 @@ int main(){
     cin >> N;
     for(int i = 0, x; i < N; i++){
         cin >> x;
-        int lft = query(x), rit = i - lft;
+        int lft = query(x-1), rit = i - lft;
         ans += min(lft, rit); update(x, 1);
     }
     cout << ans << endl;
