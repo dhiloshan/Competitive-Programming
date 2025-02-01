@@ -21,7 +21,7 @@ int main(){
     cin >> N;
     for(int i = 1, x; i <= N; i++){
         cin >> x; // tube x
-        int lft = query(x), rit = i - 1 - lft; // lft considers if we put the tube from the left, rit does the opposite
+        int lft = query(x - 1), rit = i - 1 - lft; // lft considers if we put the tube from the left, rit does the opposite
                                                // rit = total - number of integers from 1 to x = remaining integers (-1 is for the fact we start at i = 1 and do the queries) )
         sum += min(lft, rit); update(x, 1);    // min(lft, rit) says does it cost less to put the tube from the left or right
                                                // take input and add 1 frequency for that number
