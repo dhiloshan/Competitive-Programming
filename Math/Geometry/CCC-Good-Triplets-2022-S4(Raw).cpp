@@ -1,5 +1,5 @@
 // CCC '22 S4 - Good Triplets (DMOJ): https://dmoj.ca/problem/ccc22s4
-// RAW CODE
+// RAW CODE - https://dmoj.ca/src/6940651
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e6+3;
