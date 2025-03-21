@@ -1,4 +1,4 @@
-// CCC '25 J4 - Sunny Days (DMOJ): https://dmoj.ca/problem/ccc25j4 - https://dmoj.ca/problem/ccc25j4
+// CCC '25 J4 - Sunny Days (DMOJ): https://dmoj.ca/problem/ccc25j4
 // ANNOTATED CODE
 #include <bits/stdc++.h>
 using namespace std;
