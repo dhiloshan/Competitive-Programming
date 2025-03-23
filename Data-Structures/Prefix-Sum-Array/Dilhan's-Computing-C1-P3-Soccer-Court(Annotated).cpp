@@ -4,7 +4,7 @@
 using namespace std;
 typedef long long ll;
 const int MM = 402;
-int N, M, ans=0; ll psa[2*MM][MM]; // O(N*M^2) with 2D psa and hashmap optimization (even faster with pb_ds hash table)
+int N, M, ans; ll psa[2*MM][MM]; // O(N*M^2) with 2D psa and hashmap optimization (even faster with pb_ds hash table)
 int main(){
     ios::sync_with_stdio(0); cin.tie(0);
     cin >> N >> M;
