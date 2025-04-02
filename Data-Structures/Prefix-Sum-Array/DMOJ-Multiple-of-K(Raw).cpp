@@ -1,4 +1,4 @@
-// Multiple of K (DMOJ): https://dmoj.ca/problem/oly19practice19
+// Multiple of K (Olympiads): https://dmoj.ca/problem/oly19practice19
 // RAW CODE - https://dmoj.ca/src/6458546
 #include <bits/stdc++.h>
 using namespace std;
