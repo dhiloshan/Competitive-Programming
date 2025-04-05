@@ -1,5 +1,5 @@
 // RTE '16 S3 - School Traversal (DMOJ): https://dmoj.ca/problem/rte16s3
-// RAW CODE
+// RAW CODE - https://dmoj.ca/src/7101728
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 6000, MM2 = 1e6+3;
