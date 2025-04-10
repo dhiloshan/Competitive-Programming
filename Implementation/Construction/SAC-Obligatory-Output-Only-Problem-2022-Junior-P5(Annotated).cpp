@@ -1,5 +1,5 @@
 // SAC '22 Code Challenge 4 Junior P5 - Obligatory Output Only Problem (DMOJ): https://dmoj.ca/problem/sac22cc4jp5
-// ANNOTATED CODE
+// ANNOTATED CODE - https://dmoj.ca/src/7109571
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e5; // idea: N will be pushed into the queue N-2 times. Then, each time node N searches for neighbours, it will do so N-2 times. (N-2)(N-2) is way beyond 10^7
