@@ -1,5 +1,5 @@
 // Arcadia Computing Contest 2 P4 - Choose Your Own Adventure! (DMOJ): https://dmoj.ca/problem/ahscc2p4
-// ANNOTATED CODE
+// ANNOTATED CODE - https://dmoj.ca/src/7122195
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 2e5+5;
