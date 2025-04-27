@@ -1,5 +1,5 @@
 // Another Contest 7 Problem 3 - Network Connections (DMOJ): https://dmoj.ca/problem/acc7p3
-// ANNOTATED CODE
+// ANNOTATED CODE - https://dmoj.ca/src/7133648
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
