@@ -1,6 +1,6 @@
 // Problem 785. Is Graph Bipartite? (Leetcode) : https://leetcode.com/problems/is-graph-bipartite/
 // ANNOTATED CODE
-// SOLUTION #1: BFS
+// SOLUTION #1: BFS - O(N+M)
 class Solution {
 public:
     bool isBipartite(vector<vector<int>>& graph) {
