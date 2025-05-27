@@ -1,4 +1,4 @@
-// SOLUTION #1: Dijkstra implementation with priority queue O((V+E) logV)
+// SOLUTION #1: Dijkstra implementation with priority queue O(ElogV)
 // Single Source Shortest Path (DMOJ): https://dmoj.ca/problem/sssp
 // RAW CODE - https://dmoj.ca/src/6804649
 #include <bits/stdc++.h>
