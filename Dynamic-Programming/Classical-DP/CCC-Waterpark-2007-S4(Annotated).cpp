@@ -22,7 +22,7 @@ int main(){
         cin >> a >> b; 
     } // dp[i] number of ways to reach node i from node 1
     dp[1] = 1; // base case: there is one way to reach node 1
-    for(int i = 2; i <= N; i++){ // goes through the nodes in a forward fashion
+    for(int i = 2; i <= N; i++){ // goes through the nodes in a forward fashion (PROBLEM GUARANTEES that for every edge, the smaller hill points to the bigger hill. that's why we can loop from 2 to N without using BFS or some algo)
         for(int nxt : adj[i]){ // for each neighbour of node i
             dp[i] += dp[nxt]; // since the neighbour leads to the current node, you are adding the number of ways from the neighbour node to the current node
         }
