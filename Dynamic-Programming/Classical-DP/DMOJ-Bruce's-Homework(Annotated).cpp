@@ -1,5 +1,5 @@
 // Bruce's Homework (DMOJ Olympiads School Only): https://dmoj.ca/problem/olyhwk
-// ANNOTATD CODE
+// ANNOTATED CODE
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 1e4;
