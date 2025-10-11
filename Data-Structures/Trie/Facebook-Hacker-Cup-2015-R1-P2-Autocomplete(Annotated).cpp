@@ -3,45 +3,30 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-const int MM = 6e5+3;
-int T;
-class node {
-public:
-    unordered_map<char, node*> child; // just like an adjacency list, nodes store all of its neighbours and point to it
+struct node {
+    unordered_map<char, shared_ptr<node> > child;
+    // shared_ptr is a smart pointer that will delete itself once out of the scope
 };
-void freeData(node* u){ // frees nodes to avoid MLE
-    for(auto e : u->child){
-        freeData(e.second);
-    }
-    delete u; // dont use free() -> malloc, use delete
-}
+int T, N; string s;
 int main(){
-    ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+    ios::sync_with_stdio(0); cin.tie(0);
     cin >> T;
-    for(int i = 1; i <= T; i++){
-        int N; cin >> N;
-        node* root = new node(); // pointer to a variable with type node
-        // int* random = new int(); random is a pointer to itself, an integer
+    for(int t = 1; t <= T; t++){
+        cin >> N;
+        shared_ptr<node> root = make_shared<node>(); // removes the data after every iteration
         int cnt = 0;
         for(int i = 1; i <= N; i++){
-            string s; cin >> s;
-            // start from base case
-            node* cur = root;
-            int curCnt = 0; bool flag = false;  // flag dictates if we started to go to a new path (word is bigger than the longest common prefix)
-            for(int j = 1; j <= s.size(); j++){ // iterate through the string
-                char c = s[j-1]; // make it 0-indexed
-                if(!(cur->child.count(c))){ // if this new character does not exist as one of the current node's neighbours 
-                    if(!flag){ // if we haven't already deviated to a new path
-                        curCnt = j; flag = true; 
-                    }
-                    cur->child[c] = new node(); // add a new node since there are no neighbours
+            cin >> s;
+            auto cur = root; int tmp = 0;
+            for(int i = 0; i < s.size(); i++){
+                if(!cur->child.count(s[i])){ 
+                    if(!tmp) tmp = i+1; 
+                    cur->child[s[i]] = make_shared<node>();
                 }
-                cur = cur->child[c]; // continue going down the tree
+                cur = cur->child[s[i]];
             }
-            if(!flag) curCnt = s.size(); // edge case: the entire word is in the trie, so add the entire string's size
-            cnt += curCnt;
+            cnt += tmp == 0? s.size() : tmp; // edge case: tmp is 0 because the entire string is in the trie
         }
-        printf("Case #%d: %d\n", i, cnt);
-        freeData(root); // remember to recursively free the data starting from root to avoid MLE
+        printf("Case #%d: %d\n", t, cnt);
     }
 }
