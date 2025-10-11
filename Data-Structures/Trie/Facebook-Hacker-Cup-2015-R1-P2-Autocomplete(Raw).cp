@@ -3,42 +3,29 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-int T;
-class node {
-public:
-    unordered_map<char, node*> child;
+struct node {
+    unordered_map<char, shared_ptr<node> > child;
 };
-void freeData(node* u){
-    for(auto e : u->child){
-        freeData(e.second);
-    }
-    delete u;
-}
+int T, N; string s;
 int main(){
-    ios::sync_with_stdio(0); cin.tie(0); cout.tie(0);
+    ios::sync_with_stdio(0); cin.tie(0);
     cin >> T;
-    for(int i = 1; i <= T; i++){
-        int N; cin >> N;
-        node* root = new node(); 
+    for(int t = 1; t <= T; t++){
+        cin >> N;
+        shared_ptr<node> root = make_shared<node>(); 
         int cnt = 0;
         for(int i = 1; i <= N; i++){
-            string s; cin >> s;
-            node* cur = root;
-            int curCnt = 0; bool flag = false;
-            for(int j = 1; j <= s.size(); j++){
-                char c = s[j-1];
-                if(!(cur->child.count(c))){
-                    if(!flag){
-                        curCnt = j; flag = true;
-                    }
-                    cur->child[c] = new node();
+            cin >> s;
+            auto cur = root; int tmp = 0;
+            for(int i = 0; i < s.size(); i++){
+                if(!cur->child.count(s[i])){ 
+                    if(!tmp) tmp = i+1; 
+                    cur->child[s[i]] = make_shared<node>();
                 }
-                cur = cur->child[c];
+                cur = cur->child[s[i]];
             }
-            if(!flag) curCnt = s.size();
-            cnt += curCnt;
+            cnt += tmp == 0? s.size() : tmp;
         }
-        printf("Case #%d: %d\n", i, cnt);
-        freeData(root);
+        printf("Case #%d: %d\n", t, cnt);
     }
 }
