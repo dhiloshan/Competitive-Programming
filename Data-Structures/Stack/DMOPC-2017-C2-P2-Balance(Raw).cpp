@@ -1,4 +1,4 @@
-// DMOPC '18 Contest 2 P4 - Damage Output (DMOJ): https://dmoj.ca/problem/dmopc18c2p4
+// DMOPC '17 Contest 2 P2 - Balance (DMOJ): https://dmoj.ca/problem/dmopc17c2p2
 // RAW CODE
 #include <bits/stdc++.h>
 using namespace std;
