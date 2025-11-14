@@ -7,6 +7,7 @@ typedef long long ll;
 typedef pair<int, int> pi;
 struct e {
     int val, idx, rank;
+    //  val is the value of the number; idx is the position in the original input array; rank is the location of the number in our new data set. it represents how far up it can go (the answer the question is looking for)
 };
 int N, ans; vector<e> u; vector<e*> adj[21];
 int main(){
