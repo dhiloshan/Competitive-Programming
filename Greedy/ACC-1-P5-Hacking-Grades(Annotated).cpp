@@ -3,12 +3,11 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 2e5+3;
-const int MOD = 1e9+7;
 typedef pair<int, int> pi;
 typedef long long ll;
-struct e {
+struct e { // casting all decimal values to LONG double is required for greater precision
     int n, d, idx;
-    bool operator<(const e &y) const {
+    bool operator<(const e &y) const { // sort based on greatest yield of increasing mark i
         long double curVal = (long double)(n+1)/(d+1) - (long double)n/d;
         long double newVal = (long double)(y.n+1)/(y.d+1) - (long double)y.n/y.d;
         return curVal < newVal;
@@ -28,7 +27,7 @@ int main() {
     }
     while (!q.empty() && K > 0) {
         auto [n, d, idx] = q.top(); q.pop();
-        ori[idx] = {++n, ++d};
+        ori[idx] = {++n, ++d}; // update the mark
         if (n < d)
             q.push({n, d, idx});
         K--;
