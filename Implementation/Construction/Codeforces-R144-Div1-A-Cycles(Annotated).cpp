@@ -64,11 +64,4 @@ int main() {
     }
 
 }
-/*
- # of possible cycles = # of triplets = N choose 3 = 100 choose 3 = 161700 > max K (10^5)
- => creating such arrangement is always possible
 
- Start with {1,2,3}, then {1,2,4}
- 1,2,{3,4,..,100}
- 1,3
- */
