@@ -12,7 +12,7 @@ int main() {
     cin >> Q;
     for (int i = 1, k; i <= Q; i++){
         cin >> k;
-        // binary search to find q lower bound. if a of the found pos > k, found pos--; the final answer is pos
+        // binary search. the final answer is lo
         int lo = 0, hi = N+1;
         while (hi - lo > 1) {
             int mi = lo + (hi-lo)/2;
