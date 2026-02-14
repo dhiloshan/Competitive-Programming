@@ -1,5 +1,5 @@
 // Tree Distances II (CSES): https://cses.fi/problemset/task/1133
-// ANNOTATED CODE
+// ANNOTATED CODE (NOT MY CODE, this is usaco guide's code). comments are mine (in a rush to prep for CCC)
 #include <bits/stdc++.h>
 typedef long long ll;
 using namespace std;
