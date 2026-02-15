@@ -1,43 +1,37 @@
 // Tree Distances II (CSES): https://cses.fi/problemset/task/1133
-// ANNOTATED CODE (NOT MY CODE, this is usaco guide's code)
+// RAW CODE
 #include <bits/stdc++.h>
-typedef long long ll;
 using namespace std;
-
-int n;
-vector<int> graph[200001];
-ll dp[200001], ans[200001];
-
-void dfs1(int node = 1, int parent = 0, ll depth = 0) {
-    ans[1] += depth;
-    dp[node] = 1;
-    for (int i : graph[node])
-        if (i != parent) {
-            dfs1(i, node, depth + 1);
-            dp[node] += dp[i];
+typedef long long ll;
+typedef pair<int, int> pi;
+const int MM = 3e6+8;
+ll N, ans[MM], sz[MM]; vector<int> adj[MM];
+void dfs1(int cur, int par, ll dep) {
+    ans[1] += dep;
+    sz[cur] = 1;
+    for (int nxt : adj[cur]) {
+        if (nxt != par) {
+            dfs1(nxt, cur, dep+1);
+            sz[cur] += sz[nxt];
         }
-}
-
-void dfs2(int node = 1, int parent = 0) {
-    for (int i : graph[node])
-        if (i != parent) {
-            ans[i] = ans[node] + n - 2 * dp[i];
-            dfs2(i, node);
-        }
-}
-
-int main() {
-    ios_base::sync_with_stdio(0);
-    cin.tie(0);
-    cin >> n;
-    for (int i = 1; i < n; i++) {
-        int a, b;
-        cin >> a >> b;
-        graph[a].push_back(b);
-        graph[b].push_back(a);
     }
-    dfs1();
-    dfs2();
-    for (int i = 1; i <= n; i++) cout << ans[i] << ' ';
-    return 0;
+}
+void dfs2(int cur, int par) {
+    for (int nxt : adj[cur]) {
+        if (nxt != par) {
+            ans[nxt] = ans[cur] + N - 2 * sz[nxt];
+            dfs2(nxt, cur);
+        }
+    }
+}
+int main() {
+    cin >> N;
+    for (int i = 1, a, b; i < N; i++) {
+        cin >> a >> b; adj[a].push_back(b); adj[b].push_back(a);
+    }
+    dfs1(1, 1, 0);
+    dfs2(1, 1);
+    for (int i = 1; i <= N; i++) {
+        cout << ans[i] << " \n"[i==N];
+    }
 }
