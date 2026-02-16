@@ -6,6 +6,7 @@ typedef long long ll;
 const int MM = 262144; // 2 * nearest power of 2 for 100,000 - 1 (very strict memory limit)
 struct node { int l, r, v; } seg[MM];
 int N, Q, a[MM], x, y; char op;
+// key point: where does our answer lie: left child, right child, or both?
 void build(int l, int r, int idx){
     seg[idx].l = l; seg[idx].r = r; // initialize node
     if(l == r) { seg[idx].v = a[l]; return; } // if leaf node
