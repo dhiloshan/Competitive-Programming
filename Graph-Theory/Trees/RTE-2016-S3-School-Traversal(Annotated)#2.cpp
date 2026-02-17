@@ -1,5 +1,5 @@
 // RTE '16 S3 - School Traversal (DMOJ): https://dmoj.ca/problem/rte16s3
-// ANNOTATED CODE
+// ANNOTATED CODE (solution 2: LCA)
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 6000;
