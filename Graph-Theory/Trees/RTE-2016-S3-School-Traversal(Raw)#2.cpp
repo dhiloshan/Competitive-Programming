@@ -1,5 +1,5 @@
 // RTE '16 S3 - School Traversal (DMOJ): https://dmoj.ca/problem/rte16s3
-// RAW CODE
+// RAW CODE (solution 2: lca)
 #include <bits/stdc++.h>
 using namespace std;
 const int MM = 6000;
