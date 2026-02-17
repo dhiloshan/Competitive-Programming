@@ -14,7 +14,7 @@ int fun(int maskL, int maskR) {
     int ret = 1e9;
     // on one turn, you can operate EITHER on the left side or the RIGHT side
     // option 1: operate on the left side
-    for (int sub = maskL; sub > 0; sub = (sub-1) & maskL) // for each subset
+    for (int sub = maskL; sub > 0; sub = (sub-1) & maskL) // for each subset (sub represents the items we should remove: if a bit is 1, remove that item)
         if (abs((curL - sumL[sub]) - curR) <= W) // if we can remove these items
             ret = min(ret, 1 + fun(maskL ^ sub, maskR)); // answer is 1 + how to deal with the new situation
 
